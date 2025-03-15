@@ -7,14 +7,12 @@ terraform {
     }
 }
 }
-
-
 resource "aws_s3_bucket" "tarea" {
-  bucket = "prueba-guarne-${random_string.aws_s3[count.index].id}"
+  
+  bucket = "dev-ops-team-bucket-${random_string.aws_s3[count.index].id}"
   count  = 5
-  tags = { "area" = "tesoreria"
-    "propietario" = "ferney"
-    "pais"        = "colombia"
+  tags = { "area" = "devOps"
+    "pais"        = "de Las Maravillas"
   }
 }
 
