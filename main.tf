@@ -13,6 +13,7 @@ resource "aws_s3_bucket" "tarea" {
   count  = 5
   tags = { "area" = "devOps"
     "pais"        = "de Las Maravillas"
+    "ciudad"      = "Medellin"
   }
 }
 
