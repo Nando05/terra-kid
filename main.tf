@@ -10,7 +10,7 @@ terraform {
 
 
 resource "aws_s3_bucket" "tarea" {
-  bucket = "prueba-paisa-${random_string.aws_s3[count.index].id}"
+  bucket = "prueba-guarne-${random_string.aws_s3[count.index].id}"
   count  = 5
   tags = { "area" = "tesoreria"
     "propietario" = "ferney"
